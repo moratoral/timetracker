@@ -21,49 +21,16 @@ Feature: Admin can edit company info
     Then  I should see "No tienes permiso para acceder a esta página"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#  Scenario: Admin can edit the company info
-#    Given I am an admin
-#    And   I follow "Mi empresa"
-#    And   I follow "Modificar"
-#    When  I fill in "Nombre" with "Rumasa que pasa"
-#    And   I fill in "Dirección" with "C/Ruizmateos, 34 5B"
-#    And   I press "Guardar datos"
-#    Then  I should see "Compañia actualizada correctamente"
+  Scenario: Admin can edit the company info
+    Given I am an admin
+    And   I follow "Mi empresa"
+    And   I follow "Modificar"
+    When  I fill in "Nombre" with "Rumasa que pasa"
+    And   I fill in "Dirección" with "C/Ruizmateos, 34 5B"
+    And   I fill in "email" with "info@rumasaquepasa.com"
+    And   I fill in "Telefono" with "915678767"
+    And   I press "Guardar datos"
+    Then  I should see "Compañia actualizada correctamente"
 
 #  Scenario Outline: User can edit the company info
 #    Given I am an user
