@@ -27,8 +27,8 @@ Feature: Admin can edit company info
     And   I follow "Modificar"
     When  I fill in "Nombre" with "Rumasa que pasa"
     And   I fill in "Dirección" with "C/Ruizmateos, 34 5B"
-    And   I fill in "email" with "info@rumasaquepasa.com"
-    And   I fill in "Telefono" with "915678767"
+    And   I fill in "Email" with "info@rumasaquepasa.com"
+    And   I fill in "Telefono" with "912345678"
     And   I press "Guardar datos"
     Then  I should see "Compañia actualizada correctamente"
 
