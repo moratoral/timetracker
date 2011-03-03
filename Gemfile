@@ -6,7 +6,7 @@ gem 'jquery-rails'
 gem "haml"
 gem "pivotal-tracker"
 
-group :development, :test do
+#group :development, :test do
   gem 'capybara'
   gem 'database_cleaner'
   gem 'cucumber-rails'
@@ -17,4 +17,4 @@ group :development, :test do
   gem 'factory_girl',                    :require => 'factory_girl'
   gem 'factory_girl_rails'
   gem 'delorean'
-end
+#end
