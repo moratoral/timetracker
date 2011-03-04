@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101002160757) do
+ActiveRecord::Schema.define(:version => 20110304191702) do
 
   create_table "companies", :force => true do |t|
     t.string   "subdomain",       :limit => 50
@@ -21,6 +21,8 @@ ActiveRecord::Schema.define(:version => 20101002160757) do
     t.string   "place"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email"
+    t.string   "phone",           :limit => 20
   end
 
   add_index "companies", ["subdomain"], :name => "index_companies_on_subdomain", :unique => true
